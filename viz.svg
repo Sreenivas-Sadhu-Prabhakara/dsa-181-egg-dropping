@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="498" viewBox="0 0 760 498" role="img" aria-label="Step-by-step visual walkthrough">
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="context-stroke"/></marker></defs>
+<rect x="1.0" y="1.0" width="758.0" height="496.0" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+<text x="24.0" y="34.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="17" fill="#1e293b" text-anchor="start" font-weight="600">Egg Dropping — count coverage, not floors</text>
+<circle cx="35.0" cy="74.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="78.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">1</text>
+<text x="56.0" y="79.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">2 eggs, 100 floors: fewest drops that GUARANTEE finding the breaking floor. Binary</text>
+<text x="56.0" y="98.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">search is out — a broken egg is gone; one egg forces linear scanning.</text>
+<text x="72.0" y="133.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end">setup</text>
+<rect x="84.0" y="114.0" width="90.0" height="28.0" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="129.0" y="133.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">eggs → 2</text>
+<rect x="184.0" y="114.0" width="126.0" height="28.0" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="247.0" y="133.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">floors → 100</text>
+<rect x="320.0" y="114.0" width="279.0" height="28.0" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="459.5" y="133.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">one egg → must scan 1,2,3,...</text>
+<line x1="24.0" y1="158.0" x2="736.0" y2="158.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="178.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="182.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">2</text>
+<text x="56.0" y="183.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Flip the question: with m moves and k eggs, how many floors CAN be covered? f(m,k) =</text>
+<text x="56.0" y="202.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">f(m−1,k−1) + f(m−1,k) + 1 — the drop floor itself plus both outcomes. With 2 eggs, m</text>
+<text x="56.0" y="221.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">moves cover m(m+1)/2 floors.</text>
+<text x="24.0" y="245.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="start" font-weight="600">coverage</text>
+<text x="47.0" y="261.0" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#64748b" text-anchor="middle">moves</text>
+<text x="93.0" y="261.0" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#64748b" text-anchor="middle">coverage</text>
+<text x="139.0" y="261.0" font-family="ui-monospace,Menlo,monospace" font-size="10" fill="#64748b" text-anchor="middle">verdict</text>
+<rect x="24.0" y="267.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="46.0" y="287.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">13</text>
+<rect x="70.0" y="267.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="92.0" y="287.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">91</text>
+<rect x="116.0" y="267.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="138.0" y="287.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">not enough</text>
+<rect x="24.0" y="299.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="46.0" y="319.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">14</text>
+<rect x="70.0" y="299.0" width="44.0" height="30.0" rx="4" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="92.0" y="319.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">105</text>
+<rect x="116.0" y="299.0" width="44.0" height="30.0" rx="4" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+<text x="138.0" y="319.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#1e293b" text-anchor="middle">≥ 100 ✓</text>
+<line x1="24.0" y1="345.0" x2="736.0" y2="345.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="365.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="369.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">3</text>
+<text x="56.0" y="370.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Answer: 14 (start at floor 14, then 27, 39... each step one lower). The coverage DP</text>
+<text x="56.0" y="389.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">is O(eggs·moves) — dramatically smaller than the classic O(eggs·floors²)</text>
+<text x="56.0" y="408.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">formulation.</text>
+<text x="72.0" y="443.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end">answer</text>
+<rect x="84.0" y="424.0" width="279.0" height="28.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+<text x="223.5" y="443.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">2 eggs, 100 floors → 14 drops</text>
+<text x="380.0" y="480.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">github.com/Sreenivas-Sadhu-Prabhakara · dsa series</text>
+</svg>

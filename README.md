@@ -12,6 +12,13 @@ The direct DP ("min trials for e eggs, f floors") is O(e·f²) and the textbook 
 
 **Complexity:** O(e · answer) time, O(e) space.
 
+## Visual walkthrough
+
+Read the picture top to bottom — each numbered frame is one moment of the algorithm
+running on this repo's test example.
+
+![Step-by-step visual walkthrough](viz.svg)
+
 ## Run
 
     go test ./...   # verify
